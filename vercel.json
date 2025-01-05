@@ -6,12 +6,12 @@
       }
     },
     "functions": {
-      "api/**/*.js": {
-        "runtime": "nodejs18.x"
+      "server/**/*.js": {
+        "runtime": "@vercel/node"
       }
     },
     "routes": [
-      { "src": "/api/(.*)", "dest": "/api/$1" },
+      { "src": "/server/(.*)", "dest": "/server/$1" },
       { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
