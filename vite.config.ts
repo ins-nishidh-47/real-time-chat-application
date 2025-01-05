@@ -12,6 +12,9 @@ export default defineConfig({
     port: 3000
   },
   build: {
-    outDir: 'dist'  // Ensures static files are built in the dist folder
+    outDir: 'dist',  // Ensures that the build output is saved in the dist folder
+    rollupOptions: {
+      input: 'index.html'  // Make sure Vite uses your index.html as the entry point
+    }
   }
 });
