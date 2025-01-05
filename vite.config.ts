@@ -10,5 +10,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // This allows access from your local network
     port: 3000
+  },
+  build: {
+    outDir: 'dist'  // Ensures static files are built in the dist folder
   }
 });
